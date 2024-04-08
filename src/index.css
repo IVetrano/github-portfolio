@@ -1,6 +1,7 @@
 body {
-    background: #333333;
+    background: #000;
     font: 50px "Roboto", Futura, sans-serif;
+    color: #fff;
     margin: 20px;
   }
   
@@ -19,8 +20,8 @@ body {
   }
   
   .square {
-    background: #fff;
-    border: 1px solid #999;
+    background: #000;
+    border: 1px solid #fff;
     float: left;
     font-size: 24px;
     font-weight: bold;
