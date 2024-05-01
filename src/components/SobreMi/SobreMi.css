@@ -1,0 +1,39 @@
+.texto {
+    font: 20px "Red Hat Display";
+    color: #fff;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.texto2 {
+    font: 20px "Red Hat Display";
+    color: #fff;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.iconos {
+    color: white;
+    font: 50px "Red Hat Display";
+}
+
+.icono {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+@media (max-width: 768px) {
+    .two-column-layout .row {
+      flex-direction: column-reverse; /* Reverse order of columns on mobile */
+    }
+}
+
+@media (min-width: 768px) {
+    .texto {
+        margin-top: 30%;
+    }
+
+    .iconos {
+        margin-left: -7%;
+    }
+}

@@ -1,0 +1,54 @@
+.tarjeta {
+    background-color: transparent;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cuerpo-tarjeta {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 15px;
+}
+
+.imagen-tarjeta {
+    flex: 0 0 50%; /* Ajusta el ancho de la imagen según sea necesario */
+}
+
+.contenido {
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.titulo {
+  color: white;
+}
+
+.ml-3 {
+    flex: 1; /* Permite que el contenido se expanda */
+}
+  
+  /* Estilo para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 18rem;
+        margin-left: 15%;
+    }
+    .cuerpo-tarjeta {
+      flex-direction: column; /* Cambia a disposición en columna */
+    }
+  
+    .imagen-tarjeta {
+      width: 100%; /* Imagen ocupa todo el ancho */
+      order: 0; /* Imagen se muestra primero */
+    }
+  
+    .ml-3 {
+      order: 1; /* Contenido se muestra después */
+    }
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}

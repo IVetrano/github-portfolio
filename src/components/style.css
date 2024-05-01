@@ -1,6 +1,7 @@
 .text {
-    font: 16px "Red Hat Display";
-    color: #fff
+    font: 25px "Red Hat Display";
+    color: #fff;
+    line-height: 1.2;
 }
 
 .greenText {

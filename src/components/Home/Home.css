@@ -1,4 +1,28 @@
-.name {
+.nombre {
+    font: 50px "Red Hat Display";
+    color: #27fb6b;
+}
+
+.hola {
     font: 20px "Red Hat Display";
-    color: #27fb6b
+    color: #fff;
+    line-height: 0.5;
+}
+
+@media (max-width: 768px) {
+    .hola {
+      margin-top: 5%; /* Reverse order of columns on mobile */
+    }
+}
+
+@media (min-width: 768px) {
+    .hola {
+      margin-top: 30%; /* Reverse order of columns on mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .two-column-layout .row {
+      flex-direction: column-reverse; /* Reverse order of columns on mobile */
+    }
 }

@@ -1,0 +1,9 @@
+  /* Estilo para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    .carousel {
+        height: 90%;
+    }
+    .carousel-inner {
+        margin-bottom: -30%;
+    }
+}
