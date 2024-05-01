@@ -24,9 +24,9 @@ function NavBar() {
 				<Navbar.Toggle aria-controls="navbar-collapse" />
 				<Navbar.Collapse id="navbar-collapse" >
         			<Nav>
-            			<Nav.Link href="/sobremi"><AiOutlineUser className="iconoBoton"/> Sobre mí</Nav.Link>
-            			<Nav.Link href="/proyectos"><IoBriefcaseOutline className="iconoBoton"/> Proyectos</Nav.Link>
-            			<Nav.Link href="/contacto"><MdOutlineMessage className="iconoBoton"/> Contacto</Nav.Link>
+            			<Nav.Link href="/github-portfolio/sobremi"><AiOutlineUser className="iconoBoton"/> Sobre mí</Nav.Link>
+            			<Nav.Link href="/github-portfolio/proyectos"><IoBriefcaseOutline className="iconoBoton"/> Proyectos</Nav.Link>
+            			<Nav.Link href="/github-portfolio/contacto"><MdOutlineMessage className="iconoBoton"/> Contacto</Nav.Link>
 						<Nav.Link href="https://github.com/IVetrano/github-portfolio/raw/master/Curriculum vitae 2024.pdf" className="botonCV"><CgFileDocument className="iconoBoton"/> CV</Nav.Link>
           			</Nav>
 				</Navbar.Collapse>

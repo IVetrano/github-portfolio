@@ -16,9 +16,9 @@ function App() {
             <Router>
                 <Routes>
                     <Route exact path="/github-portfolio" element={<Home />} />
-                    <Route path="/sobremi" element={<SobreMi />} />
-                    <Route path='/proyectos' element={<Proyectos />} />
-                    <Route path='/contacto' element={<Contacto />} />
+                    <Route path="/github-portfolio/sobremi" element={<SobreMi />} />
+                    <Route path='/github-portfolio/proyectos' element={<Proyectos />} />
+                    <Route path='/github-portfolio/contacto' element={<Contacto />} />
                 </Routes>
             </Router>
         </div>
