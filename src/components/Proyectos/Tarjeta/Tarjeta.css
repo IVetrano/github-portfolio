@@ -10,8 +10,9 @@
     border-radius: 15px;
 }
 
+
 .imagen-tarjeta {
-    flex: 0 0 50%; /* Ajusta el ancho de la imagen según sea necesario */
+    flex: 0 0 50%;
 }
 
 .contenido {
@@ -47,6 +48,9 @@
 }
 
 @media (min-width: 768px) {
+    .imagen-tarjeta {
+      width: 50%;
+    }
     .contenido {
         margin-right: 5%;
         margin-left: 5%;
