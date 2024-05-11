@@ -13,7 +13,9 @@ import { FaC } from "react-icons/fa6";
 import { FaDocker } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
 import { SiUml } from "react-icons/si";
+import { SiApachemaven } from "react-icons/si";
 import { SiPandas } from "react-icons/si";
 import { SiGooglecolab } from "react-icons/si";
 
@@ -36,6 +38,7 @@ function SobreMi() {
                             <TbBrandCpp className="icono" title="Lenguaje C++"/>
                             <FaPython className="icono" title="Python"/>
                             <FaJava className="icono" title="Java"/>
+                            <SiApachemaven className="icono" title="Maven"/>
                             <FaGitAlt className="icono" title="git"/>
                             <FaGithub className="icono" title="GitHub"/>
                             <FaDocker className="icono" title="Docker"/>
@@ -43,6 +46,7 @@ function SobreMi() {
                             <SiPandas className="icono" title="Pandas"/>
                             <SiGooglecolab className="icono" title="Google Colab"/>
                             <FaReact className="icono" title="React"/>
+                            <FaCss3Alt className="icono" title="CSS"/>
                         </p>
                     </div>
                 </Col>
