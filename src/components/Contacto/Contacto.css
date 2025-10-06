@@ -1,5 +1,101 @@
-.contenedor {
-    color: rgba(255, 255, 255, 0.7);
-    font: 20px "Red Hat Display";
+.contacto-info {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: "Red Hat Display", sans-serif;
+    margin-top: 40%;
+    text-align: center;
+}
+
+.contacto-titulo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contacto-descripcion {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 40px;
+}
+
+/* Línea blanca lateral */
+.contacto-items::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1px;
+}
+
+.contacto-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 25px;
+    align-items: flex-start;
+    margin-top: 30%;
+    margin-left: 30%;
+    gap: 15px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icono_contacto {
+    font-size: 3rem;
+    color: #03c04a;
+    transition: color 0.2s ease;
+}
+
+.enlace {
     text-decoration: none;
+}
+
+.enlace:hover .icono {
+    color: #04ff63;
+}
+
+.contacto-item:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+    .contacto-layout .row {
+      flex-direction: column;
+    }
+
+    .contacto-info {
+        margin-top: 20%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .contacto-items {
+        margin: 40px auto 0 auto;
+        align-items: left;
+        padding-left: 15%;
+    }
+
+    .contacto-items::before {
+        display: none;
+    }
+
+    .contacto-item {
+        justify-content: center;
+    }
+
+    .icono_contacto {
+        font-size: 2.5rem;
+    }
 }

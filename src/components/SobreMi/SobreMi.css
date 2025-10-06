@@ -1,19 +1,26 @@
 .texto {
     font: 20px "Red Hat Display";
-    color: #fff;
+    color: rgba(255, 255, 255, 0.6);
     line-height: 1.5;
     text-align: left;
 }
 
+.titulo {
+    font: "Red Hat Display";
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+
 .texto2 {
     font: 20px "Red Hat Display";
-    color: #fff;
+    color: rgba(255, 255, 255, 0.6);
     line-height: 1.5;
     text-align: left;
 }
 
 .iconos {
-    color: white;
+    color: #03c04a;
     font: 50px "Red Hat Display";
 }
 
@@ -29,7 +36,7 @@
 }
 
 @media (min-width: 768px) {
-    .texto {
+    .titulo {
         margin-top: 30%;
     }
 

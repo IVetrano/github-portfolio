@@ -5,6 +5,7 @@ import "./SobreMi.css";
 import photo from "../../assets/foto.png";
 
 /* Importo iconos */
+import { FaLinux } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
 import { FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
@@ -18,6 +19,10 @@ import { SiUml } from "react-icons/si";
 import { SiApachemaven } from "react-icons/si";
 import { SiPandas } from "react-icons/si";
 import { SiGooglecolab } from "react-icons/si";
+import { DiRuby } from "react-icons/di";
+import { SiRubysinatra } from "react-icons/si";
+
+
 
 
 function SobreMi() {
@@ -25,8 +30,9 @@ function SobreMi() {
         <Container className="two-column-layout">
             <Row>
                 <Col md={6}>
+                    <h2 className="titulo">Sobre mí</h2>
                     <p className="texto">
-                        Soy Ignacio Vetrano, estudiante del cuarto año de Ingenieria
+                        Soy Ignacio Vetrano, estudiante del último año de Ingenieria
                         en Informatica en la Universidad de Buenos Aires.
                     </p>
                     <p className="texto2">
@@ -34,6 +40,7 @@ function SobreMi() {
                     </p>
                     <div>
                         <p className="iconos">
+                            <FaLinux className="icono" title="Linux"/>
                             <FaC className="icono" title="Lenguaje C"/>
                             <TbBrandCpp className="icono" title="Lenguaje C++"/>
                             <FaPython className="icono" title="Python"/>
@@ -47,6 +54,8 @@ function SobreMi() {
                             <SiGooglecolab className="icono" title="Google Colab"/>
                             <FaReact className="icono" title="React"/>
                             <FaCss3Alt className="icono" title="CSS"/>
+                            <DiRuby className="icono" title="Ruby"/>
+                            <SiRubysinatra className="icono" title="Sinatra"/>
                         </p>
                     </div>
                 </Col>
