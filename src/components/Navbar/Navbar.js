@@ -27,7 +27,7 @@ function NavBar() {
             			<Nav.Link href="/github-portfolio/sobremi"><AiOutlineUser className="iconoBoton"/> Sobre mí</Nav.Link>
             			<Nav.Link href="/github-portfolio/proyectos"><IoBriefcaseOutline className="iconoBoton"/> Proyectos</Nav.Link>
             			<Nav.Link href="/github-portfolio/contacto"><MdOutlineMessage className="iconoBoton"/> Contacto</Nav.Link>
-						<Nav.Link href="https://raw.githubusercontent.com/IVetrano/github-portfolio/main/Curriculum-vitae-2024.pdf" className="botonCV"><CgFileDocument className="iconoBoton"/> CV</Nav.Link>
+						<Nav.Link href="https://raw.githubusercontent.com/IVetrano/github-portfolio/main/Curriculum-vitae.pdf" className="botonCV"><CgFileDocument className="iconoBoton"/> CV</Nav.Link>
           			</Nav>
 				</Navbar.Collapse>
         	</Container>
