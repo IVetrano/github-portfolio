@@ -5,6 +5,8 @@ import worms from "../../assets/worms.jpg";
 import algothief from "../../assets/algothief.jpg"
 import pytris from "../../assets/tetris.png"
 import portfolio from "../../assets/imagen_prueba.png";
+import ivetranoTasks from "../../assets/ivetrano_tasks.png"
+import turneroHospitalario from "../../assets/turnero_hospital.png"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
@@ -22,6 +24,30 @@ function Proyectos() {
                     hasta los dientes, cuyo único objetivo es la destruccion."
           imagenSrc={worms}
           link="https://manusarivi.github.io/taller-tp-worms/"
+      />
+      </Carousel.Item>
+      <Carousel.Item>
+      <Tarjeta
+          titulo="Ivetrano Tasks"
+          contenido="Aplicación fullstack para gestionar tareas,
+                    desarrollada con React en el frontend y Python con Flask en el backend.
+                    Permite a los usuarios crear, editar, eliminar y marcar tareas como completadas,
+                    proporcionando una interfaz intuitiva para la gestión eficiente del tiempo.
+                    Ademas de un calendario interactivo para visualizar las tareas programadas por fecha."
+          imagenSrc={ivetranoTasks}
+          link="https://ivetrano.github.io/ivetrano_tasks_front/"
+      />
+      </Carousel.Item>
+      <Carousel.Item>
+      <Tarjeta
+          titulo="Turnero Hospitalario"
+          contenido="Sistema dividido en dos componentes:
+                    API REST, desarrollada en Ruby/Sinatra, que gestiona médicos, pacientes, especialidades y turnos. Y un
+                    Bot de Telegram, que actúa como interfaz para pacientes, permitiendo registrarse, consultar y reservar turnos médicos de manera simple e intuitiva.
+                    El proyecto fue diseñado bajo el enfoque BDD (Behavior Driven Development), utilizando Cucumber/Gherkin para definir y validar las historias de usuario del sistema.
+                    A continuación se resumen las principales funcionalidades cubiertas por las pruebas automatizadas."
+          imagenSrc={turneroHospitalario}
+          link="https://ivetrano.github.io/Turnero-Hospitalario/"
       />
       </Carousel.Item>
       <Carousel.Item>
