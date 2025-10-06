@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/github-portfolio/static/css/main.dd46425d.css",
-    "main.js": "/github-portfolio/static/js/main.1fefd401.js",
+    "main.css": "/github-portfolio/static/css/main.559f7028.css",
+    "main.js": "/github-portfolio/static/js/main.29519ebc.js",
     "static/js/453.d4b8ff9c.chunk.js": "/github-portfolio/static/js/453.d4b8ff9c.chunk.js",
     "static/media/foto.png": "/github-portfolio/static/media/foto.1887e45cb65381b24f6a.png",
     "static/media/ilustracion.png": "/github-portfolio/static/media/ilustracion.e59e5d866fc1296677fd.png",
     "static/media/worms.jpg": "/github-portfolio/static/media/worms.9660776896631f9f53cd.jpg",
+    "static/media/ivetrano_tasks.png": "/github-portfolio/static/media/ivetrano_tasks.40834e13703bd24ae509.png",
+    "static/media/turnero_hospital.png": "/github-portfolio/static/media/turnero_hospital.bfbe3f620e80fee01c9d.png",
     "static/media/imagen_prueba.png": "/github-portfolio/static/media/imagen_prueba.1aa9d0d0d50169c8945a.png",
     "static/media/algothief.jpg": "/github-portfolio/static/media/algothief.cafe8a73b6b3025e5084.jpg",
     "index.html": "/github-portfolio/index.html",
-    "main.dd46425d.css.map": "/github-portfolio/static/css/main.dd46425d.css.map",
-    "main.1fefd401.js.map": "/github-portfolio/static/js/main.1fefd401.js.map",
+    "main.559f7028.css.map": "/github-portfolio/static/css/main.559f7028.css.map",
+    "main.29519ebc.js.map": "/github-portfolio/static/js/main.29519ebc.js.map",
     "453.d4b8ff9c.chunk.js.map": "/github-portfolio/static/js/453.d4b8ff9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd46425d.css",
-    "static/js/main.1fefd401.js"
+    "static/css/main.559f7028.css",
+    "static/js/main.29519ebc.js"
   ]
 }
