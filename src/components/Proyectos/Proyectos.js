@@ -7,6 +7,7 @@ import pytris from "../../assets/tetris.png"
 import portfolio from "../../assets/imagen_prueba.png";
 import ivetranoTasks from "../../assets/ivetrano_tasks.png"
 import turneroHospitalario from "../../assets/turnero_hospital.png"
+import clubManager from "../../assets/club_manager.png"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
@@ -24,6 +25,18 @@ function Proyectos() {
                     hasta los dientes, cuyo único objetivo es la destruccion."
           imagenSrc={worms}
           link="https://manusarivi.github.io/taller-tp-worms/"
+      />
+      </Carousel.Item>
+      <Carousel.Item>
+      <Tarjeta
+          titulo="Club Manager"
+          contenido="Aplicación web fullstack para la gestión de clubes deportivos,
+                    desarrollada con React en el frontend y Python con FastAPI en el backend.
+                    Permite a los administradores gestionar socios, canchas,
+                    reservas y pagos (con integracion de Mercado Pago), proporcionando una interfaz intuitiva
+                    para la administración eficiente del club."
+          imagenSrc={clubManager}
+          link="https://ivetrano.github.io/club_manager_doc/"
       />
       </Carousel.Item>
       <Carousel.Item>
