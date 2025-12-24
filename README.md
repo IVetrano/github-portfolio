@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# 🚀 Portfolio Personal - Ignacio Vetrano
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio profesional desarrollado con React que muestra mis proyectos, habilidades y experiencia en desarrollo de software.
 
-## Available Scripts
+## ✨ Características
 
-In the project directory, you can run:
+### 🎨 Diseño Moderno
+- **Tema oscuro** con gradientes animados
+- **Glassmorphism** en navbar con efectos de scroll
+- **Animaciones fluidas** al cargar y hacer hover
+- **Responsive design** optimizado para todos los dispositivos
 
-### `npm start`
+### 🏠 Secciones
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Home
+- Presentación con animaciones de entrada
+- Texto rotativo mostrando diferentes roles
+- Enlaces a redes sociales
+- CTAs (Call to Action) prominentes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Sobre Mí  
+- Información personal y profesional
+- Grid interactivo de tecnologías con iconos animados
+- Imagen de perfil con efectos decorativos
+- Stack tecnológico completo
 
-### `npm test`
+#### Proyectos
+- Grid responsive de proyectos
+- Cards interactivas con hover effects
+- Tags de tecnologías utilizadas
+- Enlaces directos a cada proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Contacto
+- Cards de contacto con iconos
+- Enlaces a redes sociales
+- Información de disponibilidad
+- Diseño limpio y accesible
 
-### `npm run build`
+### 🎯 Tecnologías Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React** 18.2.0
+- **React Bootstrap** 2.10.2
+- **React Router DOM** 6.23.0
+- **React Icons** 5.0.1
+- **Bootstrap** 5.3.3
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📄 Licencia
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este proyecto es de código abierto y está disponible bajo la licencia MIT.
 
-### `npm run eject`
+## 👤 Autor
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Ignacio Vetrano**
+- GitHub: [@IVetrano](https://github.com/IVetrano)
+- LinkedIn: [Ignacio Vetrano](https://www.linkedin.com/in/ignacio-vetrano-906a01221/)
+- Email: ignaciovetrano00@gmail.com
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⭐ Si te gustó este portfolio, no dudes en darle una estrella!

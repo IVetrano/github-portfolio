@@ -1,58 +1,171 @@
-.tarjeta {
-    background-color: transparent;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.cuerpo-tarjeta {
-    background-color: rgba(0, 0, 0, 0.5);
+.project-card {
+    background: rgba(26, 31, 58, 0.6);
+    border: 2px solid rgba(39, 251, 107, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #27fb6b;
+    box-shadow: 0 20px 50px rgba(39, 251, 107, 0.3);
+}
+
+.card-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 15, 26, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay.active {
+    opacity: 1;
+}
+
+.overlay-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #27fb6b;
+    text-decoration: none;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.overlay-link:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.link-icon {
+    font-size: 3rem;
+}
+
+.card-body-custom {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title-custom {
+    font-size: 1.8rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background: rgba(39, 251, 107, 0.15);
+    color: #27fb6b;
+    padding: 5px 12px;
     border-radius: 15px;
+    font-size: 0.85rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    border: 1px solid rgba(39, 251, 107, 0.3);
 }
 
-
-.imagen-tarjeta {
-    flex: 0 0 50%;
+.card-text-custom {
+    font-size: 1rem;
+    color: #b0b8c9;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    font-family: "Red Hat Display", sans-serif;
 }
 
-.contenido {
-  color: rgba(255, 255, 255, 0.70);
+.btn-view-project {
+    background: linear-gradient(135deg, #036d19, #027a1c);
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    align-self: flex-start;
 }
 
-.titulo {
-  color: white;
+.btn-view-project:hover {
+    background: linear-gradient(135deg, #27fb6b, #1ed660);
+    color: #0a0f1a;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(39, 251, 107, 0.4);
+    border-color: #27fb6b;
 }
 
-.ml-3 {
-    flex: 1; /* Permite que el contenido se expanda */
+.btn-icon {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
 }
-  
-  /* Estilo para pantallas pequeñas (celulares) */
+
+.btn-view-project:hover .btn-icon {
+    transform: translateX(3px);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .tarjeta {
-        width: 18rem;
-        margin-left: 15%;
+    .card-image-container {
+        height: 200px;
     }
-    .cuerpo-tarjeta {
-      flex-direction: column; /* Cambia a disposición en columna */
+    
+    .card-title-custom {
+        font-size: 1.5rem;
     }
-  
-    .imagen-tarjeta {
-      width: 100%; /* Imagen ocupa todo el ancho */
-      order: 0; /* Imagen se muestra primero */
+    
+    .card-text-custom {
+        font-size: 0.95rem;
     }
-  
-    .ml-3 {
-      order: 1; /* Contenido se muestra después */
-    }
-}
-
-@media (min-width: 768px) {
-    .imagen-tarjeta {
-      width: 50%;
-    }
-    .contenido {
-        margin-right: 5%;
-        margin-left: 5%;
+    
+    .btn-view-project {
+        width: 100%;
     }
 }

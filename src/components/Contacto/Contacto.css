@@ -1,101 +1,277 @@
-.contacto-info {
-    color: rgba(255, 255, 255, 0.85);
+.contacto-page {
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(135deg, #0a0f1a 0%, #1a1f3a 50%, #0f1924 100%);
+    display: flex;
+    align-items: center;
+    padding: 100px 0 60px 0;
+}
+
+.contacto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contacto-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.contacto-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contacto-info-section {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info-wrapper {
+    max-width: 100%;
+}
+
+.contacto-main-title {
+    font-size: 3.5rem;
     font-family: "Red Hat Display", sans-serif;
-    margin-top: 40%;
-    text-align: center;
-}
-
-.contacto-titulo {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 15px;
+    font-weight: 800;
     color: #fff;
+    margin-bottom: 25px;
+    line-height: 1.2;
 }
 
-.contacto-descripcion {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.6);
+.title-highlight {
+    color: #27fb6b;
+    display: block;
+}
+
+.contacto-main-description {
+    font-size: 1.2rem;
+    font-family: "Red Hat Display", sans-serif;
+    color: #b0b8c9;
+    line-height: 1.8;
     margin-bottom: 40px;
 }
 
-/* Línea blanca lateral */
-.contacto-items::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 1px;
+.info-highlight-box {
+    background: rgba(39, 251, 107, 0.1);
+    border-left: 4px solid #27fb6b;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
 }
 
-.contacto-items {
+.info-subtitle {
+    font-size: 1.3rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    color: #27fb6b;
+    margin-bottom: 15px;
+}
+
+.availability-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.availability-list li {
+    font-size: 1.1rem;
+    color: #b0b8c9;
+    margin-bottom: 10px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.contacto-details-section {
+    padding: 20px;
+}
+
+.contact-cards {
     display: flex;
     flex-direction: column;
-    position: relative;
-    padding-left: 25px;
-    align-items: flex-start;
-    margin-top: 30%;
-    margin-left: 30%;
+    gap: 20px;
+}
+
+.contact-card {
+    background: rgba(26, 31, 58, 0.6);
+    border: 2px solid rgba(39, 251, 107, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.contact-card:hover {
+    border-color: #27fb6b;
+    transform: translateX(5px);
+    box-shadow: 0 10px 30px rgba(39, 251, 107, 0.2);
+}
+
+.card-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: rgba(39, 251, 107, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #27fb6b;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.card-link {
+    font-size: 1rem;
+    color: #27fb6b;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.card-link:hover {
+    color: #1ed660;
+    text-decoration: underline;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #b0b8c9;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.social-section {
+    margin-top: 30px;
+}
+
+.social-title {
+    font-size: 1.3rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.social-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.contacto-item {
+.social-link-card {
+    background: rgba(39, 251, 107, 0.05);
+    border: 2px solid rgba(39, 251, 107, 0.3);
+    border-radius: 12px;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.8);
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.icono_contacto {
-    font-size: 3rem;
-    color: #03c04a;
-    transition: color 0.2s ease;
-}
-
-.enlace {
     text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.enlace:hover .icono {
-    color: #04ff63;
+.social-link-card:hover {
+    background: rgba(39, 251, 107, 0.15);
+    border-color: #27fb6b;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(39, 251, 107, 0.3);
 }
 
-.contacto-item:hover {
-    color: #fff;
-    transform: translateY(-2px);
+.social-link-icon {
+    font-size: 2.5rem;
+    color: #27fb6b;
+    transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
+.social-link-card:hover .social-link-icon {
+    transform: scale(1.2);
+}
 
-    .contacto-layout .row {
-      flex-direction: column;
+.social-link-card span {
+    font-size: 1rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    color: #b0b8c9;
+    transition: color 0.3s ease;
+}
+
+.social-link-card:hover span {
+    color: #27fb6b;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .contacto-page {
+        padding: 80px 0 40px 0;
     }
-
-    .contacto-info {
-        margin-top: 20%;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .contacto-items {
-        margin: 40px auto 0 auto;
-        align-items: left;
-        padding-left: 15%;
-    }
-
-    .contacto-items::before {
-        display: none;
-    }
-
-    .contacto-item {
-        justify-content: center;
-    }
-
-    .icono_contacto {
+    
+    .contacto-main-title {
         font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .title-highlight {
+        display: inline;
+    }
+    
+    .contacto-main-description {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .info-highlight-box {
+        margin-bottom: 40px;
+    }
+    
+    .contacto-info-section {
+        margin-bottom: 30px;
+    }
+    
+    .social-links-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacto-main-title {
+        font-size: 2rem;
+    }
+    
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .card-icon-wrapper {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .card-icon {
+        font-size: 1.5rem;
     }
 }

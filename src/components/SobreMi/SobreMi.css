@@ -1,46 +1,303 @@
-.texto {
-    font: 20px "Red Hat Display";
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.5;
+.sobremi-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    padding: 120px 20px 80px 20px;
+    overflow: visible;
+}
+
+.sobremi-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #0a0f1a 0%, #1a1f3a 50%, #0f1924 100%);
+    z-index: -1;
+}
+
+.sobremi-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.sobremi-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-section {
+    padding: 20px;
+}
+
+.content-wrapper {
+    max-width: 600px;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 30px;
     text-align: left;
 }
 
-.titulo {
-    font: "Red Hat Display";
+.title-highlight {
+    color: #27fb6b;
+    position: relative;
+}
+
+.title-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #27fb6b, transparent);
+}
+
+.about-text {
+    font-size: 1.2rem;
+    font-family: "Red Hat Display", sans-serif;
+    color: #b0b8c9;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-text-secondary {
+    font-size: 1.1rem;
+    font-family: "Red Hat Display", sans-serif;
+    color: #8a92a3;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.text-highlight {
+    color: #27fb6b;
+    font-weight: 600;
+}
+
+.skills-intro {
+    margin: 40px 0 30px 0;
+}
+
+.skills-title {
+    font-size: 1.8rem;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
     color: #fff;
-    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.skills-description {
+    font-size: 1.1rem;
+    color: #b0b8c9;
+    margin-bottom: 25px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tech-card {
+    background: rgba(39, 251, 107, 0.05);
+    border: 2px solid rgba(39, 251, 107, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tech-card:hover {
+    background: rgba(39, 251, 107, 0.15);
+    border-color: #27fb6b;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(39, 251, 107, 0.3);
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    color: #27fb6b;
+    transition: all 0.3s ease;
+}
+
+.tech-card:hover .tech-icon {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 5px 15px rgba(39, 251, 107, 0.5));
+}
+
+.tech-name {
+    font-size: 0.85rem;
+    font-family: "Red Hat Display", sans-serif;
+    color: #b0b8c9;
+    font-weight: 500;
     text-align: center;
 }
 
-.texto2 {
-    font: 20px "Red Hat Display";
-    color: rgba(255, 255, 255, 0.6);
-    line-height: 1.5;
-    text-align: left;
+.tech-card:hover .tech-name {
+    color: #27fb6b;
 }
 
-.iconos {
-    color: #03c04a;
-    font: 50px "Red Hat Display";
+.methodology-card {
+    background: rgba(39, 180, 251, 0.05);
+    border-color: rgba(39, 180, 251, 0.2);
 }
 
-.icono {
-    margin-left: 1%;
-    margin-right: 1%;
+.methodology-card:hover {
+    background: rgba(39, 180, 251, 0.15);
+    border-color: #27b4fb;
+    box-shadow: 0 10px 30px rgba(39, 180, 251, 0.3);
 }
 
+.methodology-card .tech-icon {
+    color: #27b4fb;
+}
+
+.methodology-card:hover .tech-name {
+    color: #27b4fb;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    align-self: flex-start;
+}
+
+.profile-image-container {
+    position: sticky;
+    top: 100px;
+    max-width: 500px;
+    width: 100%;
+    z-index: 10;
+}
+
+.image-decoration {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #27fb6b;
+    border-radius: 50%;
+    z-index: 0;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translate(0, 0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(-10px, -10px);
+        opacity: 0.8;
+    }
+}
+
+.profile-image-wrapper {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.profile-image-wrapper:hover {
+    transform: scale(1.02);
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.profile-image:hover {
+    filter: grayscale(0%);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .two-column-layout .row {
-      flex-direction: column-reverse; /* Reverse order of columns on mobile */
+    .sobremi-container {
+        padding: 60px 15px;
+    }
+    
+    .sobremi-content .row {
+        flex-direction: column-reverse;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    .about-text,
+    .about-text-secondary {
+        text-align: center;
+    }
+    
+    .skills-title {
+        text-align: center;
+    }
+    
+    .tech-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+    
+    .tech-card {
+        padding: 15px;
+    }
+    
+    .tech-icon {
+        font-size: 2rem;
+    }
+    
+    .image-section {
+        margin-bottom: 30px;
+    }
+    
+    .profile-image-container {
+        max-width: 350px;
     }
 }
 
-@media (min-width: 768px) {
-    .titulo {
-        margin-top: 30%;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section-title {
+        font-size: 2.5rem;
     }
-
-    .iconos {
-        margin-left: -7%;
+    
+    .tech-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     }
 }

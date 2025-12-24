@@ -1,28 +1,61 @@
-import React from "react";
-import { Card, Col, Row, Button } from "react-bootstrap";
+import React, { useState } from "react";
+import { Card } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import "./Tarjeta.css";
+import { FiExternalLink } from "react-icons/fi";
 
 function Tarjeta(props) {
-
-    const { titulo, contenido, imagenSrc, link } = props;
+    const { titulo, contenido, imagenSrc, link, tags = [] } = props;
+    const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <Card className="tarjeta">
-  			<Card.Body className="d-flex cuerpo-tarjeta">
-    			<Card.Img className="imagen-tarjeta" variant="top" src={imagenSrc} />
-    			<div className="ml-3">
-    				<Card.Title className="titulo">{titulo}</Card.Title>
-    				<Card.Text className="contenido">{contenido}</Card.Text>
-    				<Button 
-						style={{backgroundColor: "#036d19", borderColor: "#036d19"}} 
-						variant="primary"
-						href={link}>Ver mas</Button>
-    			</div>
-  			</Card.Body>
-		</Card>
+        <Card 
+            className="project-card"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            <div className="card-image-container">
+                <Card.Img 
+                    className="card-image" 
+                    variant="top" 
+                    src={imagenSrc} 
+                    alt={titulo}
+                />
+                <div className={`image-overlay ${isHovered ? 'active' : ''}`}>
+                    <a 
+                        href={link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="overlay-link"
+                    >
+                        <FiExternalLink className="link-icon" />
+                        <span>Ver proyecto</span>
+                    </a>
+                </div>
+            </div>
+            <Card.Body className="card-body-custom">
+                <Card.Title className="card-title-custom">{titulo}</Card.Title>
+                {tags.length > 0 && (
+                    <div className="tags-container">
+                        {tags.map((tag, index) => (
+                            <span key={index} className="tag">{tag}</span>
+                        ))}
+                    </div>
+                )}
+                <Card.Text className="card-text-custom">{contenido}</Card.Text>
+                <a 
+                    href={link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-view-project"
+                >
+                    Ver más
+                    <FiExternalLink className="btn-icon" />
+                </a>
+            </Card.Body>
+        </Card>
     );
 }
 
