@@ -62,6 +62,9 @@ function Home() {
                             <a href="/github-portfolio/proyectos" className="btn-primary-custom">
                                 Ver Proyectos
                             </a>
+                            <a href="https://raw.githubusercontent.com/IVetrano/github-portfolio/main/Curriculum-vitae.pdf" className="btn-secondary-custom" target="_blank" rel="noopener noreferrer">
+                                Descargar CV
+                            </a>
                             <a href="/github-portfolio/contacto" className="btn-secondary-custom">
                                 Contactar
                             </a>

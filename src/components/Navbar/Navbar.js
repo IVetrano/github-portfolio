@@ -64,9 +64,11 @@ function NavBar() {
 						<Nav.Link 
                             href="https://raw.githubusercontent.com/IVetrano/github-portfolio/main/Curriculum-vitae.pdf" 
                             className="botonCV"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <CgFileDocument className="iconoBoton"/> 
-                            <span>CV</span>
+                            <span>Currículum</span>
                         </Nav.Link>
           			</Nav>
 				</Navbar.Collapse>
